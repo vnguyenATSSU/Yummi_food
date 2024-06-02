@@ -6,15 +6,15 @@
 </head>
 <body>
     <header>
-        <h1>Search Supplies</h1>
+        <h1>Search Food</h1>
     </header>
 
     <nav>
         <ul>
             <li><a href="index.php">Home</a></li>
-            <li><a href="create_supply.php">Add Supply</a></li>
-            <li><a href="supply_search.php">Search Supplies</a></li>
-            <li><a href="supplies_management.php">Manage Supplies</a></li>
+            <li><a href="create_supply.php">Add Food</a></li>
+            <li><a href="supply_search.php">Search for food</a></li>
+            <li><a href="supplies_management.php">Food Management</a></li>
         </ul>
     </nav>
 
