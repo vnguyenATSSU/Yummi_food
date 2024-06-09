@@ -5,7 +5,7 @@ require_once("connection.php");
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Extract details from the form
     $productName = $_POST['productName'];
-    $category_id = $_POST['categroryId'];
+    $category_id = $_POST['categoryId'];
     $price = $_POST['price'];
 
     // Check if connection is established
@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->close();
     $connection->close();
 } else {
-    // Not a POST request, redirect to home page
+    // Not a POST request, redirect to home page or handle error
     header("Location: index.php");
     exit();
 }

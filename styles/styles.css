@@ -31,43 +31,22 @@ a {
     transition: background-color 0.3s, color 0.3s;
 }
 
-#instLink{
+#instLink, #editLink, #rateLink, #deleteLink {
     padding: 5px 15px;
     background-color: rgb(172, 208, 236);
-    border: none;   
-}
-
-#instLink:hover{
-    background-color: rgb(36, 111, 90);
-    color: #fff;
-}
-
-#editLink{
-    padding: 5px 15px;
-    background-color: rgb(172, 208, 236);
-    border: none;   
-}
-#editLink:hover{
-    background-color: rgb(36, 111, 90);
-    color: #fff;
-}
-
-#rateLink{
-    padding: 5px 15px;
-    background-color: rgb(172, 208, 236);
-    border: none;   
-}
-#rateLink:hover{
-    background-color: rgb(36, 111, 90);
-    color: #fff;
-}
-
-#deleteLink{
-    padding: 5px 15px;
-    background-color: rgb(255, 171, 171);
     border: none;
 }
-#deleteLink:hover{
+
+#instLink:hover, #editLink:hover, #rateLink:hover {
+    background-color: rgb(36, 111, 90);
+    color: #fff;
+}
+
+#deleteLink {
+    background-color: rgb(255, 171, 171);
+}
+
+#deleteLink:hover {
     background-color: red;
     color: #fff;
 }
@@ -110,7 +89,7 @@ input, select, textarea {
     border-radius: 3px;
 }
 
-button {
+button, input[type="submit"] {
     background-color: #0066cc;
     color: #fff;
     padding: 10px 15px;
@@ -119,9 +98,10 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+button:hover, input[type="submit"]:hover {
     background-color: #004080;
 }
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -141,4 +121,11 @@ th {
 
 tr:nth-child(even) {
     background-color: #f9f9f9;
+}
+
+img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 10px 0;
 }
