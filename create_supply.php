@@ -18,6 +18,32 @@
             color: #fff;
             padding: 10px 0;
             text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .header .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .header .auth-buttons a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 15px;
+            border: 1px solid #fff;
+            border-radius: 4px;
+        }
+
+        .header .auth-buttons a:hover {
+            background-color: #fff;
+            color: #343a40;
         }
 
         .nav {
@@ -49,10 +75,12 @@
         .container {
             max-width: 600px;
             margin: 20px auto;
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white */
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
+            background-image: url('https://i.pinimg.com/originals/33/ef/8b/33ef8b9c0b902154a6cd4103a21275ef.jpg'); /* Placeholder image URL */
+            background-size: cover;
         }
 
         .form-group {
@@ -110,6 +138,10 @@
 <body>
     <div class="header">
         <h1>Yummi Food - Add New Food</h1>
+        <div class="auth-buttons">
+            <a href="login.php">Login</a>
+            <a href="signup.php">Sign Up</a>
+        </div>
     </div>
     
     <div class="nav">
